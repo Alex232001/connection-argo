@@ -1,0 +1,20 @@
+apiVersion: agroproj.io/v1alpha1
+kind: Application
+metadata:
+  name: root-app-nginx
+  namespace: argocd
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  destination: 
+    name:  dest-name
+    namespace: arocd
+  source:
+    path: "applications"
+    repoURL: git@github.com:Alex232001/connection-argo.git
+    targetRevision: HEAD
+  project: nginx
+  syncPolycy:
+    automated: 
+      prune: true
+      selfHeal: true
