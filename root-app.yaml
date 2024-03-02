@@ -14,7 +14,7 @@ spec:
     repoURL: git@github.com:Alex232001/connection-argo.git
     targetRevision: HEAD 
   project: default
-  syncPolycy:
+  syncPolicy:
     automated: 
       prune: true
       selfHeal: true
