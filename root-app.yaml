@@ -6,10 +6,9 @@ metadata:
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
-  destination: 
-   # name:  dest-name
+  destination:
+    name:  in-cluster
     namespace: arocd
-    server:  https://localhost:6443
   source:
     path: "applications"
     repoURL: git@github.com:Alex232001/connection-argo.git
