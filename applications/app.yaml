@@ -10,7 +10,7 @@ spec:
     name: app-nginx
     namespace: app-nginx
   source:
-    path: "HelmCharts/Chart" 
+    path: "Chart" 
     repoURL: "git@github.com:Alex232001/connection-argo.git"
     targetRevision: HEAD
     helm:
