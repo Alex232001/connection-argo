@@ -19,7 +19,7 @@ spec:
       parameters:
         - name: "image"
           value: nginx:latest   
-   project: nginx
+   project: default
    syncPolicy:
      automated:
        prune: true

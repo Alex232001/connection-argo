@@ -8,11 +8,11 @@ spec:
   replicas: {{.Values.replicaCount}}
   selector:
     matchLabels:
-      nginx-server: {{.Release.Name}}-nginx-server
+      project: {{.Release.Name}}-nginx-server
   template:
     metadata:
       labels:
-        nginx-server: {{.Release.Name}}-nginx-server
+        project: {{.Release.Name}}-nginx-server
     spec:
       containers:
         - name: nginx

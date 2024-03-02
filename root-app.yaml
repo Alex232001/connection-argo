@@ -12,8 +12,8 @@ spec:
   source:
     path: "applications"
     repoURL: git@github.com:Alex232001/connection-argo.git
-    targetRevision: HEAD
-  project: nginx
+    targetRevision: HEAD 
+  project: default
   syncPolycy:
     automated: 
       prune: true

@@ -5,7 +5,7 @@ metadata:
 spec:
   type: ClusterIP
   selector:
-    nginx-server: {{.Release.Name}}-nginx-server
+    project: {{.Release.Name}}-nginx-server
   ports:
     - name: http
       port: 80
