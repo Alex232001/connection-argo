@@ -9,6 +9,7 @@ spec:
   destination: 
     name:  dest-name
     namespace: arocd
+    server:  https://localhost:6443
   source:
     path: "applications"
     repoURL: git@github.com:Alex232001/connection-argo.git
