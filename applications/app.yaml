@@ -7,7 +7,7 @@ metadata:
     - resources-funalizer.argocd.argoproj.io
 spec:
   destination:
-    name: in-cluster
+    server: https://kubernetes.default.svc 
     namespace: app-nginx
   source:
     path: "Chart" 
@@ -19,12 +19,12 @@ spec:
       parameters:
         - name: "image"
           value: nginx:latest   
-   project: default
-   syncPolicy:
-     automated:
-       prune: true
-       selfHeal: true
-     syncOptions:
+  project: default
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
        - CreateNamespace=true
 
 
